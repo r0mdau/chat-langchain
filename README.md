@@ -19,7 +19,7 @@ Deployed version (to be updated soon): [chat.langchain.dev](https://chat.langcha
 
 Hugging Face Space (to be updated soon): [huggingface.co/spaces/hwchase17/chat-langchain](https://huggingface.co/spaces/hwchase17/chat-langchain)
 
-Blog Posts: 
+Blog Posts:
 * [Initial Launch](https://blog.langchain.dev/langchain-chat/)
 * [Streaming Support](https://blog.langchain.dev/streaming-support-in-langchain/)
 
@@ -34,7 +34,7 @@ Ingestion has the following steps:
 3. Split documents with LangChain's [TextSplitter](https://langchain.readthedocs.io/en/latest/reference/modules/text_splitter.html)
 4. Create a vectorstore of embeddings, using LangChain's [vectorstore wrapper](https://python.langchain.com/en/latest/modules/indexes/vectorstores.html) (with OpenAI's embeddings and FAISS vectorstore).
 
-Question-Answering has the following steps, all handled by [ChatVectorDBChain](https://langchain.readthedocs.io/en/latest/modules/indexes/chain_examples/chat_vector_db.html):
+Question-Answering has the following steps, all handled by [ConversationalRetrievalChain](https://langchain.readthedocs.io/en/latest/modules/indexes/chain_examples/chat_vector_db.html):
 
 1. Given the chat history and new user input, determine what a standalone question would be (using GPT-3).
 2. Given that standalone question, look up relevant documents from the vectorstore.
